@@ -1,6 +1,6 @@
-.bg-blue{
+.bg-green{
     color:white;
-    background-color: #1A237E;
+    background-color: #13a049;
     
     
 }
@@ -52,14 +52,14 @@ table{
     color: white;
   }
 button{
-    background-color: #1A237E;
+    background-color: #13a049;
     color: white;
     
     min-width: 20%;
     text-align: center;
 }
 .card{
-    margin-top: 10%;
+    margin-top: 0%;
 }
 .btn2{
     margin-left: 70%;
@@ -75,5 +75,10 @@ button:hover {
 }
 
 .clr1{
-    background-color: #1A237E;
+    background-color: #13a049;
+    margin-top: 25px;
+}
+
+.row{
+    margin-top: 25px;
 }

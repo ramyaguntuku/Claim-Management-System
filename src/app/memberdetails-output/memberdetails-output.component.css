@@ -1,6 +1,6 @@
-.bg-blue{
+.bg-green{
     color:white;
-    background-color: #1A237E;
+    background-color: #13a049;
     
     
 }
@@ -45,7 +45,7 @@
     color: white;
   }
 button{
-    background-color: #1A237E;
+    background-color: #13a049;
     color: white;
     margin-left: 34%;
     min-width: 20%;

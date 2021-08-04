@@ -1,14 +1,14 @@
 
 
-.bg-blue{
+.bg-green{
     color:white;
-    background-color: #1A237E;
+    background-color: #13a049;
     
     
 }
 
 .nav-link:hover{
-    text-decoration: white;
+    text-decoration: #13a049;
 }
 .nav1{
    
@@ -53,14 +53,15 @@ table{
     color: white;
   }
 button{
-    background-color: #1A237E;
+    background-color: #13a049;
     color: white;
     margin-left: 34%;
     min-width: 20%;
     text-align: center;
 }
 .card{
-    margin-top: 10%;
+
+    width: 100%;
 }
 .btn2{
     margin-left: 70%;
@@ -76,14 +77,16 @@ button:hover {
 }
 
 .clr{
-    color: #1A237E;
+    color: #13a049;
     font-size: large;
     overflow: visible;
 }
 
 .clr1{
-    background-color: #1A237E;
+    background-color: #13a049;
 }
 
-
+.btn-s{
+    padding-top: 10px;
+}
      

@@ -2,7 +2,7 @@ body {
     color: #000;
     overflow-x: hidden;
     height: 100%;
-    background-color: #B0BEC5;
+    background-color: #13a049;
     background-repeat: no-repeat
 }
 
@@ -24,12 +24,12 @@ body {
 
 .login1{
     font-size: large;
-    color: #1A237E;
+    color: #13a049;
 }
 
 .image {
-    width: 450px;
-    height: 320px;
+    width: 600px;
+    height: 340px;
     
 }
 
@@ -44,7 +44,7 @@ body {
     font-size: 50px;
    overflow: auto;
     font-family: 'Staatliches', cursive;
-    color: #1A237E;
+    color: #ffffff;
 
 }
 
@@ -154,8 +154,8 @@ a {
     cursor: pointer
 }
 
-.btn-blue {
-    background-color: #1A237E;
+.btn-green {
+    background-color: #13a049;
     width: 150px;
     color: #fff;
     border-radius: 2px
@@ -166,9 +166,9 @@ a {
     cursor: pointer
 }
 
-.bg-blue {
+.bg-green {
     color: #fff;
-    background-color: #1A237E
+    background-color: #13a049
 }
 
 @media screen and (max-width: 991px) {

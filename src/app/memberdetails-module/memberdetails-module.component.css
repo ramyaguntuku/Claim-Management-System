@@ -1,6 +1,6 @@
-.bg-blue{
+.bg-green{
     color:white;
-    background-color: #1A237E;
+    background-color: #13a049;
     
     
 }
@@ -38,6 +38,7 @@ table{
     text-align: center;
     margin-top: 20%;
     margin-left: 35%;
+    
   
 }
 .footer {
@@ -52,14 +53,15 @@ table{
     color: white;
   }
 button{
-    background-color: #1A237E;
+    background-color: #13a049;
     color: white;
     
     min-width: 20%;
     text-align: center;
 }
 .card{
-    margin-top: 10%;
+    margin-top: 0%;
+      
 }
 .btn2{
     margin-left: 70%;
@@ -75,5 +77,14 @@ button:hover {
 }
 
 .clr1{
-    background-color: #1A237E;
+    background-color: #13a049;
+}
+.social-contact{
+    color: white;
+}
+.py-4 {
+    margin-top: 70px;
+}
+.space{
+    margin-top: 30px;
 }
