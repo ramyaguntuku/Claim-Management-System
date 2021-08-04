@@ -11,6 +11,7 @@ import { SubmitService } from '../submit.service';
 export class SubmitInputComponent implements OnInit {
 submit = new Submit();
 key1 : any;
+  errormsg='';
   constructor(private _service : SubmitService , private _route : Router) { }
 
   ngOnInit(): void {
@@ -38,7 +39,7 @@ key1 : any;
       },
       error =>{
         console.log("Bad credentials");
-        
+        this.errormsg="Please Enter all the fields Correctly";
       }
     )
     }

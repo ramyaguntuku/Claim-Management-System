@@ -16,6 +16,7 @@ export class ClaimInputComponent implements OnInit {
   @Output() show = new EventEmitter<boolean>();
   claim = new Claim();
   key1 : any;
+  errormsg='';
   constructor(private _service : ClaimService, private _route : Router) { }
 
   ngOnInit(): void {
@@ -41,7 +42,8 @@ export class ClaimInputComponent implements OnInit {
      
     },
     error =>{
-      console.log(error);
+      console.log("Bad credentials");
+      this.errormsg="Please Enter Correct Member ID or Policy ID or Claim ID";
     }
   )
   }
