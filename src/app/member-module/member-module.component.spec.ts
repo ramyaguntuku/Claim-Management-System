@@ -31,6 +31,12 @@ describe('MemberModuleComponent', () => {
   it('can load instance', () => {
     expect(component).toBeTruthy();
   });
+  it('ngOnInit function', ()=> {
+    spyOn(sessionStorage,'getItem').and.callFake((key : 'varchasva')=> {return 'varchasva'});
+    component.ngOnInit();
+    expect(sessionStorage.getItem).toHaveBeenCalledWith("key");
+    expect(component.key1).toEqual('varchasva');
+  })
   it('logout function', () => {
     spyOn(sessionStorage,'removeItem').and.callThrough();
     component.logout();

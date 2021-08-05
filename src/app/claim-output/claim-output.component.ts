@@ -18,7 +18,7 @@ export class ClaimOutputComponent implements OnInit {
     this.route.queryParams.subscribe(
       result =>{
       this.res = JSON.parse(result.data);
-       console.log(" console   ..  "+JSON.parse(result.data));
+       console.log(JSON.parse(result.data));
       })
   }
   logout(){
