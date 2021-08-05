@@ -33,9 +33,8 @@ describe('ClaimOutputComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  xit('ngOnInit function', ()=> {
+  it('ngOnInit function', ()=> {
     spyOn(sessionStorage,'getItem').and.callFake((key : 'varchasva')=> {return 'varchasva'});
-    // spyOn(component.route.queryParams,'')
     component.ngOnInit();
     expect(sessionStorage.getItem).toHaveBeenCalledWith("key");
     expect(component.key1).toEqual('varchasva');
