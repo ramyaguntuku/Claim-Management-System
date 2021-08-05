@@ -1,6 +1,6 @@
  .bg-green{
     color:white;
-    background-color: #13a049;
+    background-color: #183a1d;
     
     
 }
@@ -50,7 +50,7 @@ table{
     color: white;
   }
 button{
-    background-color: #13a049;
+    background-color: #183a1d;
     color: white;
     margin-left: 34%;
     min-width: 20%;
@@ -78,7 +78,7 @@ button:hover {
 		height: 100px;
 	}
 	.col-md-3{
-		background: #13a049;
+		background: #183a1d;
 		padding: 4%;
     color: white;
 		border-top-left-radius: 0.5rem;
@@ -103,7 +103,7 @@ button:hover {
 		font-weight:600;
 	}
 	.contact-form button{
-		background: #13a049;
+		background: #183a1d;
 		color: #fff;
 		font-weight: 600;
 		width: 25%;

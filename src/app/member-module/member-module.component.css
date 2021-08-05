@@ -2,13 +2,13 @@
 
 .bg-green{
     color:white;
-    background-color: #13a049;
+    background-color: #183a1d;
     
     
 }
 
 .nav-link:hover{
-    text-decoration: #13a049;
+    text-decoration: #183a1d;
 }
 .nav1{
    
@@ -53,7 +53,7 @@ table{
     color: white;
   }
 button{
-    background-color: #13a049;
+    background-color: #183a1d;
     color: white;
     margin-left: 34%;
     min-width: 20%;
@@ -77,13 +77,13 @@ button:hover {
 }
 
 .clr{
-    color: #13a049;
+    color: #183a1d;
     font-size: large;
     overflow: visible;
 }
 
 .clr1{
-    background-color: #13a049;
+    background-color: #183a1d;
 }
 
 .btn-s{
