@@ -35,6 +35,10 @@ describe('ClaimOutputComponent', () => {
 
   it('ngOnInit function', ()=> {
     spyOn(sessionStorage,'getItem').and.callFake((key : 'varchasva')=> {return 'varchasva'});
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 6a5ce923dcf265f6e1b2f49a1866971f743d6f3d
     component.ngOnInit();
     expect(sessionStorage.getItem).toHaveBeenCalledWith("key");
     expect(component.key1).toEqual('varchasva');
