@@ -44,46 +44,69 @@
                     <h5 class="card-title">Please provide the details in order to proceed</h5>
                     <form  #submitform="ngForm" (ngSubmit)="submitForm()" class="form-horizontal">
                         <div class="form-group row justify-content-center py-2 ">
-                            <label for="inputPassword" class="col-sm-3 col-form-label">Policy ID</label>
+                            <label for="policyId" class="col-sm-3 col-form-label">Policy ID</label>
                             <div class="col-sm-5">
-                                <input type="number" class="form-control" name="policyId" placeholder="Policy ID" [(ngModel)]="submit.policyId">
+                              <input type="number" class="form-control" name="policyId" #policyId="ngModel" [class.is-invalid]="policyId.invalid" minlength="1" placeholder="Policy ID" [(ngModel)]="submit.policyId" required>
                             </div>
+                            <div class="col-sm-5" *ngIf="policyId.errors && (policyId.invalid)"> 
+                              <small [class.d-none]="policyId.valid" class="text-danger">Policy Id can't be empty(Numbers only)</small>
+                          </div>
                         </div>
                         <div class="form-group row justify-content-center ">
-                            <label for="inputPassword" class="col-sm-3 col-form-label">Claim ID</label>
+                            <label for="claimId" class="col-sm-3 col-form-label"> Claim ID</label>
+            
                             <div class="col-sm-5">
-                                <input type="number" class="form-control" name="claimId" placeholder="Claim ID" [(ngModel)]="submit.claimId">
+                              <input type="number" class="form-control" name="claimId" #claimId="ngModel" [class.is-invalid]="claimId.invalid" minlength="1" placeholder="Claim ID" [(ngModel)]="submit.claimId" required>
                             </div>
+                            <div class="col-sm-5" *ngIf="claimId.errors && (claimId.invalid)"> 
+                              <small [class.d-none]="claimId.valid" class="text-danger">Claim Id can't be empty(Numbers only)</small>
+                          </div> 
                         </div>
                         <div class="form-group row justify-content-center py-2 ">
-                            <label for="inputPassword" class="col-sm-3 col-form-label">Member ID</label>
+                            <label for="memberId" class="col-sm-3 col-form-label"> Member ID</label>
+            
                             <div class="col-sm-5">
-                                <input type="number" class="form-control" name="memberId" placeholder="Member ID" [(ngModel)]="submit.memberId">
+                              <input type="number" class="form-control" name="memberId" #memberId="ngModel" [class.is-invalid]="memberId.invalid" minlength="1" placeholder="Member ID" [(ngModel)]="submit.memberId" required>
                             </div>
+                            <div class="col-sm-5" *ngIf="memberId.errors && (memberId.invalid)"> 
+                              <small [class.d-none]="memberId.valid" class="text-danger">Member Id can't be empty(Numbers only)</small>
+                        </div>
                         </div>
                         <div class="form-group row justify-content-center ">
-                            <label for="inputPassword" class="col-sm-3 col-form-label">Provider ID</label>
+                            <label for="providerId" class="col-sm-3 col-form-label">Provider ID</label>
                             <div class="col-sm-5">
-                                <input type="number" class="form-control" name="providerId" placeholder="Provider ID" [(ngModel)]="submit.providerId">
+                                <input type="number" class="form-control" name="providerId" #providerId="ngModel" [class.is-invalid]="providerId.invalid" minlength="1" placeholder="Provider ID" [(ngModel)]="submit.providerId" required>
                             </div>
+                            <div class="col-sm-5" *ngIf="providerId.errors && (providerId.invalid)"> 
+                                <small [class.d-none]="providerId.valid" class="text-danger">Provider Id can't be empty(Numbers only)</small>
+                          </div>
                         </div>
                         <div class="form-group row justify-content-center py-2">
-                            <label for="inputPassword" class="col-sm-3 col-form-label">Benefit ID</label>
+                            <label for="benefitId" class="col-sm-3 col-form-label">Benefit ID</label>
                             <div class="col-sm-5">
-                                <input type="number" class="form-control" name="benefitId" placeholder="Benefit ID" [(ngModel)]="submit.benefitId">
+                                <input type="number" class="form-control" name="benefitId" #benefitId="ngModel" [class.is-invalid]="benefitId.invalid" minlength="1" placeholder="Benefit ID" [(ngModel)]="submit.benefitId" required>
                             </div>
+                            <div class="col-sm-5" *ngIf="benefitId.errors && (benefitId.invalid)"> 
+                                <small [class.d-none]="benefitId.valid" class="text-danger">Benefit Id can't be empty(Numbers only)</small>
+                          </div>
                         </div>
                         <div class="form-group row justify-content-center ">
-                            <label for="inputPassword" class="col-sm-3 col-form-label">Total Amount</label>
+                            <label for="totalBilledAmount" class="col-sm-3 col-form-label">Total Amount</label>
                             <div class="col-sm-5">
-                                <input type="number" class="form-control" name="totalBilledAmount" placeholder="Total Amount" [(ngModel)]="submit.totalBilledAmount">
+                                <input type="number" class="form-control" name="totalBilledAmount" #totalBilledAmount="ngModel" [class.is-invalid]="totalBilledAmount.invalid" minlength="1" placeholder="Total Amount" [(ngModel)]="submit.totalBilledAmount" required>
                             </div>
+                            <div class="col-sm-5" *ngIf="totalBilledAmount.errors && (totalBilledAmount.invalid)"> 
+                                <small [class.d-none]="totalBilledAmount.valid" class="text-danger">Total Amount can't be empty(Numbers only)</small>
+                          </div>
                         </div>
                         <div class="form-group row justify-content-center py-2">
-                            <label for="inputPassword" class="col-sm-3 col-form-label ">Claimed Amount</label>
+                            <label for="totalClaimedAmount" class="col-sm-3 col-form-label ">Claimed Amount</label>
                             <div class="col-sm-5">
-                                <input type="number" class="form-control" name="totalClaimedAmount" placeholder="Claimed Amount" [(ngModel)]="submit.totalClaimedAmount">
+                                <input type="number" class="form-control" name="totalClaimedAmount"  #totalClaimedAmount="ngModel" [class.is-invalid]="totalClaimedAmount.invalid" minlength="1" placeholder="Claimed Amount" [(ngModel)]="submit.totalClaimedAmount" required>
                             </div>
+                            <div class="col-sm-5" *ngIf="totalClaimedAmount.errors && (totalClaimedAmount.invalid)"> 
+                                <small [class.d-none]="totalClaimedAmount.valid" class="text-danger">Claim Amount can't be empty(Numbers only)</small>
+                          </div>
                         </div>
 
 

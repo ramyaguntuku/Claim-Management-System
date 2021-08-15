@@ -24,7 +24,7 @@ export class LoginModuleComponent implements OnInit {
     this._service.loginUserFormRemote(this.user).subscribe(
       data =>{
         console.log("response received");
-        console.log(data);
+       // console.log(data);
         sessionStorage.setItem('token',JSON.stringify(data));
         this._route.navigate(['/memberModule'],{
           skipLocationChange : true,

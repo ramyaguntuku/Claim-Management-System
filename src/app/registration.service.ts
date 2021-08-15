@@ -7,7 +7,6 @@ import { User } from './user';
   providedIn: 'root'
 })
 export class RegistrationService {
-  v : any;
   
   constructor(private _http : HttpClient) { }
 

@@ -36,7 +36,7 @@
 
 table{
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 35%;
   
 }
@@ -77,8 +77,9 @@ button:hover {
 .clr1{
     background-color: #183a1d;
     margin-top: 25px;
+    margin-bottom: 100px;
 }
 
 .row{
-    margin-top: 25px;
+    margin-top: 0px;
 }
