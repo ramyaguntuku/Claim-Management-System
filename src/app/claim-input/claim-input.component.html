@@ -51,10 +51,10 @@
             <label for="claimId" class="col-sm-3 col-form-label"> Claim ID</label>
             
             <div class="col-sm-5">
-              <input type="number" class="form-control" name="claimId" #claimId="ngModel" [class.is-invalid]="claimId.invalid" minlength="1" placeholder="Claim ID" [(ngModel)]="claim.claimId" required>
+              <input type="number" class="form-control" name="claimId" #claimId="ngModel" [class.is-invalid]="claimId.invalid && claimId.touched" minlength="1" placeholder="Claim ID" [(ngModel)]="claim.claimId" required>
             </div>
-            <div class="col-sm-5" *ngIf="claimId.errors && (claimId.invalid)"> 
-              <small [class.d-none]="claimId.valid" class="text-danger">Claim Id can't be empty(Numbers only)</small>
+            <div class="col-sm-5" *ngIf="claimId.errors && (claimId.invalid || claimId.touched)"> 
+              <small [class.d-none]="claimId.valid || claimId.untouched" class="text-danger">Claim Id can't be empty(Numbers only)</small>
           </div> 
         </div> 
         <div class="form-group row py-4 justify-content-center"  >
@@ -62,19 +62,19 @@
             <label for="memberId" class="col-sm-3 col-form-label"> Member ID</label>
             
             <div class="col-sm-5">
-              <input type="number" class="form-control" name="memberId" #memberId="ngModel" [class.is-invalid]="memberId.invalid" minlength="1" placeholder="Member ID" [(ngModel)]="claim.memberId" required>
+              <input type="number" class="form-control" name="memberId" #memberId="ngModel" [class.is-invalid]="memberId.invalid && memberId.touched" minlength="1" placeholder="Member ID" [(ngModel)]="claim.memberId" required>
             </div>
-            <div class="col-sm-5" *ngIf="memberId.errors && (memberId.invalid)"> 
-              <small [class.d-none]="memberId.valid" class="text-danger">Member Id can't be empty(Numbers only)</small>
+            <div class="col-sm-5" *ngIf="memberId.errors && (memberId.invalid || memberId.touched)"> 
+              <small [class.d-none]="memberId.valid || memberId.untouched" class="text-danger">Member Id can't be empty(Numbers only)</small>
           </div>
         </div>
         <div class="form-group row justify-content-center ">
           <label for="policyId" class="col-sm-3 col-form-label">Policy ID</label>
           <div class="col-sm-5">
-            <input type="number" class="form-control" name="policyId" #policyId="ngModel" [class.is-invalid]="policyId.invalid" minlength="1" placeholder="Policy ID" [(ngModel)]="claim.policyId" required>
+            <input type="number" class="form-control" name="policyId" #policyId="ngModel" [class.is-invalid]="policyId.invalid && policyId.touched" minlength="1" placeholder="Policy ID" [(ngModel)]="claim.policyId" required>
           </div>
-          <div class="col-sm-5" *ngIf="policyId.errors && (policyId.invalid)"> 
-            <small [class.d-none]="policyId.valid" class="text-danger">Policy Id can't be empty(Numbers only)</small>
+          <div class="col-sm-5" *ngIf="policyId.errors && (policyId.invalid || policyId.touched)"> 
+            <small [class.d-none]="policyId.valid || policyId.untouched" class="text-danger">Policy Id can't be empty(Numbers only)</small>
         </div>
         </div>
         <div class="py-4 text-center" >

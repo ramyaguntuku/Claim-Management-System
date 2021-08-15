@@ -10,8 +10,9 @@ export class MemberdetailsOutputComponent implements OnInit {
 
   constructor(private _route : Router,private route : ActivatedRoute) { }
   res: any
-
+  key1: any
   ngOnInit(): void {
+    this.key1 = sessionStorage.getItem("key");
     this.route.queryParams.subscribe(
      result =>{
      this.res = JSON.parse(result.data);
